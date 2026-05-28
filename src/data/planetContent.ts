@@ -364,17 +364,17 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
 角色設定：惡魔的女兒，整天在地獄無所事事、遊手好閒，因而被趕來人間歷練。沒有工作過的她什麼都不會，沒有公司要她，最後流落街頭——在街邊獨自唱著歌的她被星探發掘，來到了餐酒館獻唱，自此歌聲逐漸出名，成為了一名歌手。`,
         views: [
           {
-            src: asset("/works/drawings/珧幽正視圖png.png"),
+            src: asset("/works/drawings/yaoyou-front.png"),
             alt: "珧幽 — 正面視圖",
             caption: "FRONT · 正視圖",
           },
           {
-            src: asset("/works/drawings/珧幽側視圖png.png"),
+            src: asset("/works/drawings/yaoyou-side.png"),
             alt: "珧幽 — 側面視圖",
             caption: "SIDE · 側視圖",
           },
           {
-            src: asset("/works/drawings/珧幽後視圖png.png"),
+            src: asset("/works/drawings/yaoyou-back.png"),
             alt: "珧幽 — 背面視圖",
             caption: "BACK · 後視圖",
           },
@@ -414,7 +414,7 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
       "跨越題材的繪圖練習，從同人致敬到原創構圖。每張都是一次新嘗試，純展示繪畫能力，無商業使用意圖。",
     images: [
       {
-        src: asset("/works/illustrations/哈利png.png"),
+        src: asset("/works/illustrations/harry.png"),
         alt: "哈利波特同人 — 妙麗與哈利 Q 版",
         caption: "哈利波特同人",
       },

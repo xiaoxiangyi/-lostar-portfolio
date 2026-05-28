@@ -50,7 +50,7 @@ type Planet = {
 const PLANETS: Planet[] = [
   {
     id: "projects",
-    src: asset("/assets/星球IMG_1331.PNG"),
+    src: asset("/assets/planet-1331.PNG"),
     name: "專題作品",
     greek: "α LOS",
     western: "HAMAL",
@@ -62,7 +62,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "drawings",
-    src: asset("/assets/星球IMG_1330.PNG"),
+    src: asset("/assets/planet-1330.PNG"),
     name: "繪圖專案",
     greek: "β LOS",
     western: "SHERATAN",
@@ -74,7 +74,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "profile",
-    src: asset("/assets/星球IMG_1333.PNG"),
+    src: asset("/assets/planet-1333.PNG"),
     name: "個人資料",
     greek: "γ LOS",
     western: "MESARTHIM",
@@ -87,7 +87,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "contact",
-    src: asset("/assets/星球IMG_1335.PNG"),
+    src: asset("/assets/planet-1335.PNG"),
     name: "聯絡方式",
     greek: "δ LOS",
     western: "BOTEIN",
@@ -99,7 +99,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "stickers",
-    src: asset("/assets/星球IMG_1332.PNG"),
+    src: asset("/assets/planet-1332.PNG"),
     name: "貼圖創作",
     greek: "35 LOS",
     western: "STICKER",
@@ -111,7 +111,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "illustrations",
-    src: asset("/assets/星球IMG_1334.PNG"),
+    src: asset("/assets/planet-1334.PNG"),
     name: "插圖合輯",
     greek: "41 LOS",
     western: "ILLUS",
