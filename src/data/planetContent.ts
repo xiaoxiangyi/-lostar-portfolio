@@ -1,6 +1,8 @@
 // 各星球展開後顯示的內容資料
 // 之後要修改作品內容只需編輯這個檔案
 
+import { asset } from "@/lib/asset";
+
 export type PlanetId =
   | "projects"
   | "drawings"
@@ -132,7 +134,7 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
   projects: {
     type: "narrative",
     hero: {
-      src: "/works/projects/IMG_1379.jpg",
+      src: asset("/works/projects/IMG_1379.jpg"),
       alt: "願の神社主視覺 — 嶺東科技大學 DCD 數位媒體設計學系專題",
     },
     intro:
@@ -146,7 +148,7 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
           "願の神社是承載眾人願望的所在。在這座神社裡，新輝聆聽每一個渴望，為失落的人們點亮一盞燈。然而當人性過度依賴神祇，信仰本身也成了負擔。",
         images: [
           {
-            src: "/works/projects/IMG_0631.png",
+            src: asset("/works/projects/IMG_0631.png"),
             alt: "願の神社主場景 — 鳥居與光球，Q 版新輝奉上願望",
           },
         ],
@@ -160,7 +162,7 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
           "新輝是這個世界的核心，兩條設定撐起角色：許願神不能為自己許願，只能傾盡所有實現他人；頭頂的鈴鐺是新輝本身的狀態指示，當信仰枯竭，鈴鐺也將失去聲響。第一版 2D Live 採黃色和服 + 鈴鐺髮飾，定下角色基礎輪廓。",
         images: [
           {
-            src: "/works/projects/IMG_0630.png",
+            src: asset("/works/projects/IMG_0630.png"),
             alt: "新輝第一版 2D Live 立繪 — 黃色和服與鈴鐺髮飾",
           },
         ],
@@ -174,11 +176,11 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
           "第二版將角色外型修改成較成熟的版本，在細節上多了許多變化，將部件拆得更細緻，使直播中的動態效果更流暢。配色由黃轉紅，氣質從稚嫩走向沉穩。",
         images: [
           {
-            src: "/works/projects/IMG_1259.png",
+            src: asset("/works/projects/IMG_1259.png"),
             alt: "新輝第二版正面立繪 — 紅色和服與精緻配件",
           },
           {
-            src: "/works/projects/IMG_1357.gif",
+            src: asset("/works/projects/IMG_1357.gif"),
             alt: "新輝 2D Live 動畫展示",
           },
         ],
@@ -192,22 +194,22 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
           "為不同直播主題繪製專屬封面：結合廚師元素的「Overcooked2」、嘗試多角度神情的「你畫我猜」、取俏皮神情的「七日殺」，以及變換姿態的「野獸派對」。每張封面強化角色不同面向。",
         images: [
           {
-            src: "/works/projects/IMG_0595.png",
+            src: asset("/works/projects/IMG_0595.png"),
             alt: "Overcooked2 直播封面 — 廚師帽元素，喜悅大笑",
             caption: "Overcooked2 · 結合廚師元素",
           },
           {
-            src: "/works/projects/IMG_0596.png",
+            src: asset("/works/projects/IMG_0596.png"),
             alt: "你畫我猜直播封面 — 不同角度與神情",
             caption: "你畫我猜 · 嘗試不同角度",
           },
           {
-            src: "/works/projects/IMG_0601.png",
+            src: asset("/works/projects/IMG_0601.png"),
             alt: "七日殺直播封面 — 俏皮露齒神情",
             caption: "七日殺 · 俏皮神情",
           },
           {
-            src: "/works/projects/IMG_0603.png",
+            src: asset("/works/projects/IMG_0603.png"),
             alt: "野獸派對直播封面 — 側臉淺笑",
             caption: "野獸派對 · 動態姿態",
           },
@@ -222,32 +224,32 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
           "由五位組員的個人特質與形象化所繪製的 Q 版組員介紹圖，每位組員都有專屬的吉祥動物。組員五人的 Q 版人物立繪，參考本人外型特質設計而成。",
         images: [
           {
-            src: "/works/projects/IMG_1350.png",
+            src: asset("/works/projects/IMG_1350.png"),
             alt: "五位組員的吉祥動物形象化合圖",
             caption: "組員形象化吉祥物",
           },
           {
-            src: "/works/projects/IMG_1351.png",
+            src: asset("/works/projects/IMG_1351.png"),
             alt: "組員 Q 版立繪 1 — 青蛙吉祥動物",
           },
           {
-            src: "/works/projects/IMG_1352.png",
+            src: asset("/works/projects/IMG_1352.png"),
             alt: "組員 Q 版立繪 2 — 太陽吉祥動物",
           },
           {
-            src: "/works/projects/IMG_1353.png",
+            src: asset("/works/projects/IMG_1353.png"),
             alt: "組員 Q 版立繪 3 — 熊貓吉祥動物",
           },
           {
-            src: "/works/projects/IMG_1354.png",
+            src: asset("/works/projects/IMG_1354.png"),
             alt: "組員 Q 版立繪 4 — 魚吉祥動物",
           },
           {
-            src: "/works/projects/IMG_1355.png",
+            src: asset("/works/projects/IMG_1355.png"),
             alt: "組員 Q 版立繪 5 — 羊吉祥動物",
           },
           {
-            src: "/works/projects/IMG_1378.png",
+            src: asset("/works/projects/IMG_1378.png"),
             alt: "組員雙人 Q 版插畫",
           },
         ],
@@ -320,7 +322,7 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
       },
     ],
     cv: {
-      href: "/cv.pdf",
+      href: asset("/cv.pdf"),
       download: true,
     },
   },
@@ -362,17 +364,17 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
 角色設定：惡魔的女兒，整天在地獄無所事事、遊手好閒，因而被趕來人間歷練。沒有工作過的她什麼都不會，沒有公司要她，最後流落街頭——在街邊獨自唱著歌的她被星探發掘，來到了餐酒館獻唱，自此歌聲逐漸出名，成為了一名歌手。`,
         views: [
           {
-            src: "/works/drawings/珧幽正視圖png.png",
+            src: asset("/works/drawings/珧幽正視圖png.png"),
             alt: "珧幽 — 正面視圖",
             caption: "FRONT · 正視圖",
           },
           {
-            src: "/works/drawings/珧幽側視圖png.png",
+            src: asset("/works/drawings/珧幽側視圖png.png"),
             alt: "珧幽 — 側面視圖",
             caption: "SIDE · 側視圖",
           },
           {
-            src: "/works/drawings/珧幽後視圖png.png",
+            src: asset("/works/drawings/珧幽後視圖png.png"),
             alt: "珧幽 — 背面視圖",
             caption: "BACK · 後視圖",
           },
@@ -386,17 +388,17 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
 創作理念：朋友的綽號叫「魚」，便以魚人族為元素，結合喜歡的服飾風格、標準色等發想，進而誕生此角色。`,
         views: [
           {
-            src: "/works/drawings/IMG_1256.png",
+            src: asset("/works/drawings/IMG_1256.png"),
             alt: "魚人族角色 — Q 版概念",
             caption: "Q 版 · 概念探索",
           },
           {
-            src: "/works/drawings/IMG_1257.jpg",
+            src: asset("/works/drawings/IMG_1257.jpg"),
             alt: "魚人族角色 — 半身嘗試",
             caption: "半身 · 設定試畫",
           },
           {
-            src: "/works/drawings/IMG_1380.png",
+            src: asset("/works/drawings/IMG_1380.png"),
             alt: "魚人族角色 — 全身 2D Live 立繪",
             caption: "全身 · 2D Live 立繪",
           },
@@ -412,42 +414,42 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
       "跨越題材的繪圖練習，從同人致敬到原創構圖。每張都是一次新嘗試，純展示繪畫能力，無商業使用意圖。",
     images: [
       {
-        src: "/works/illustrations/哈利png.png",
+        src: asset("/works/illustrations/哈利png.png"),
         alt: "哈利波特同人 — 妙麗與哈利 Q 版",
         caption: "哈利波特同人",
       },
       {
-        src: "/works/illustrations/IMG_1346.png",
+        src: asset("/works/illustrations/IMG_1346.png"),
         alt: "插圖作品",
         caption: "待補充 · 作品說明",
         placeholder: true,
       },
       {
-        src: "/works/illustrations/IMG_1347.png",
+        src: asset("/works/illustrations/IMG_1347.png"),
         alt: "插圖作品",
         caption: "待補充 · 作品說明",
         placeholder: true,
       },
       {
-        src: "/works/illustrations/IMG_1348.jpg",
+        src: asset("/works/illustrations/IMG_1348.jpg"),
         alt: "插圖作品",
         caption: "待補充 · 作品說明",
         placeholder: true,
       },
       {
-        src: "/works/illustrations/IMG_1349.jpg",
+        src: asset("/works/illustrations/IMG_1349.jpg"),
         alt: "插圖作品",
         caption: "待補充 · 作品說明",
         placeholder: true,
       },
       {
-        src: "/works/illustrations/IMG_1377.jpg",
+        src: asset("/works/illustrations/IMG_1377.jpg"),
         alt: "插圖作品",
         caption: "待補充 · 作品說明",
         placeholder: true,
       },
       {
-        src: "/works/illustrations/5763728D-B279-45B6-9AED-51962ED90D3E.jpeg",
+        src: asset("/works/illustrations/5763728D-B279-45B6-9AED-51962ED90D3E.jpeg"),
         alt: "插圖作品",
         caption: "待補充 · 作品說明",
         placeholder: true,
@@ -468,12 +470,12 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
         description:
           "靈感來源是朋友養的「饅頭蛙」，結合凸眼顯得很呆萌，配上搞怪的情境，顯得很無俚頭。",
         images: [
-          { src: "/works/stickers/jiguagua/IMG_1340.png", alt: "吉呱呱貼圖 1" },
-          { src: "/works/stickers/jiguagua/IMG_1341.png", alt: "吉呱呱貼圖 2" },
-          { src: "/works/stickers/jiguagua/IMG_1342.png", alt: "吉呱呱貼圖 3" },
-          { src: "/works/stickers/jiguagua/IMG_1343.png", alt: "吉呱呱貼圖 4" },
-          { src: "/works/stickers/jiguagua/IMG_1344.png", alt: "吉呱呱貼圖 5" },
-          { src: "/works/stickers/jiguagua/IMG_1345.png", alt: "吉呱呱貼圖 6" },
+          { src: asset("/works/stickers/jiguagua/IMG_1340.png"), alt: "吉呱呱貼圖 1" },
+          { src: asset("/works/stickers/jiguagua/IMG_1341.png"), alt: "吉呱呱貼圖 2" },
+          { src: asset("/works/stickers/jiguagua/IMG_1342.png"), alt: "吉呱呱貼圖 3" },
+          { src: asset("/works/stickers/jiguagua/IMG_1343.png"), alt: "吉呱呱貼圖 4" },
+          { src: asset("/works/stickers/jiguagua/IMG_1344.png"), alt: "吉呱呱貼圖 5" },
+          { src: asset("/works/stickers/jiguagua/IMG_1345.png"), alt: "吉呱呱貼圖 6" },
         ],
       },
       {
@@ -483,24 +485,24 @@ export const PLANET_CONTENT: Record<PlanetId, PlanetData> = {
         description:
           "角色靈感來自於大學時期的一個朋友還有他的貓，常常有好多奇怪的口頭禪跟用語，覺得很好笑很有趣。",
         images: [
-          { src: "/works/stickers/qiuqiuyang/IMG_1358.png", alt: "邱邱羊貼圖 1" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1359.png", alt: "邱邱羊貼圖 2" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1360.png", alt: "邱邱羊貼圖 3" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1361.png", alt: "邱邱羊貼圖 4" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1362.png", alt: "邱邱羊貼圖 5" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1363.png", alt: "邱邱羊貼圖 6" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1364.png", alt: "邱邱羊貼圖 7" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1365.png", alt: "邱邱羊貼圖 8" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1366.png", alt: "邱邱羊貼圖 9" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1367.png", alt: "邱邱羊貼圖 10" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1368.png", alt: "邱邱羊貼圖 11" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1369.png", alt: "邱邱羊貼圖 12" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1370.png", alt: "邱邱羊貼圖 13" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1371.png", alt: "邱邱羊貼圖 14" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1372.png", alt: "邱邱羊貼圖 15" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1373.png", alt: "邱邱羊貼圖 16" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1374.png", alt: "邱邱羊貼圖 17" },
-          { src: "/works/stickers/qiuqiuyang/IMG_1375.png", alt: "邱邱羊貼圖 18" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1358.png"), alt: "邱邱羊貼圖 1" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1359.png"), alt: "邱邱羊貼圖 2" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1360.png"), alt: "邱邱羊貼圖 3" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1361.png"), alt: "邱邱羊貼圖 4" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1362.png"), alt: "邱邱羊貼圖 5" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1363.png"), alt: "邱邱羊貼圖 6" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1364.png"), alt: "邱邱羊貼圖 7" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1365.png"), alt: "邱邱羊貼圖 8" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1366.png"), alt: "邱邱羊貼圖 9" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1367.png"), alt: "邱邱羊貼圖 10" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1368.png"), alt: "邱邱羊貼圖 11" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1369.png"), alt: "邱邱羊貼圖 12" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1370.png"), alt: "邱邱羊貼圖 13" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1371.png"), alt: "邱邱羊貼圖 14" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1372.png"), alt: "邱邱羊貼圖 15" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1373.png"), alt: "邱邱羊貼圖 16" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1374.png"), alt: "邱邱羊貼圖 17" },
+          { src: asset("/works/stickers/qiuqiuyang/IMG_1375.png"), alt: "邱邱羊貼圖 18" },
         ],
       },
     ],

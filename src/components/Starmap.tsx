@@ -14,6 +14,7 @@ import {
   type ProfileSection,
   type ExperienceItem,
 } from "@/data/planetContent";
+import { asset } from "@/lib/asset";
 
 // 手機版偵測（< 768px）— 用於切換縱向卡片排版與星球 y 覆蓋
 function useIsMobile() {
@@ -49,7 +50,7 @@ type Planet = {
 const PLANETS: Planet[] = [
   {
     id: "projects",
-    src: "/assets/星球IMG_1331.PNG",
+    src: asset("/assets/星球IMG_1331.PNG"),
     name: "專題作品",
     greek: "α LOS",
     western: "HAMAL",
@@ -61,7 +62,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "drawings",
-    src: "/assets/星球IMG_1330.PNG",
+    src: asset("/assets/星球IMG_1330.PNG"),
     name: "繪圖專案",
     greek: "β LOS",
     western: "SHERATAN",
@@ -73,7 +74,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "profile",
-    src: "/assets/星球IMG_1333.PNG",
+    src: asset("/assets/星球IMG_1333.PNG"),
     name: "個人資料",
     greek: "γ LOS",
     western: "MESARTHIM",
@@ -86,7 +87,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "contact",
-    src: "/assets/星球IMG_1335.PNG",
+    src: asset("/assets/星球IMG_1335.PNG"),
     name: "聯絡方式",
     greek: "δ LOS",
     western: "BOTEIN",
@@ -98,7 +99,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "stickers",
-    src: "/assets/星球IMG_1332.PNG",
+    src: asset("/assets/星球IMG_1332.PNG"),
     name: "貼圖創作",
     greek: "35 LOS",
     western: "STICKER",
@@ -110,7 +111,7 @@ const PLANETS: Planet[] = [
   },
   {
     id: "illustrations",
-    src: "/assets/星球IMG_1334.PNG",
+    src: asset("/assets/星球IMG_1334.PNG"),
     name: "插圖合輯",
     greek: "41 LOS",
     western: "ILLUS",
@@ -749,7 +750,7 @@ function ExpandedView({ planetId, onClose }: ExpandedViewProps) {
         className="fixed top-4 right-4 z-[210] group flex items-center gap-2 px-3 py-2 rounded-sm border border-[rgba(30,144,255,0.4)] bg-[rgba(10,14,39,0.75)] backdrop-blur text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:border-[var(--color-accent)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] transition-all"
       >
         <img
-          src="/assets/icon-back.png"
+          src={asset("/assets/icon-back.png")}
           alt=""
           aria-hidden="true"
           className="w-5 h-5 opacity-80 group-hover:opacity-100 transition-transform group-hover:-translate-x-0.5"
@@ -822,7 +823,7 @@ function Card({ card, planetId }: { card: ContentCard; planetId: PlanetId }) {
       {(card.image || useCommIcon) && (
         <div className="mb-1">
           <img
-            src={card.image || "/assets/icon-comm.png"}
+            src={card.image || asset("/assets/icon-comm.png")}
             alt=""
             aria-hidden="true"
             className="h-6 w-auto opacity-80"

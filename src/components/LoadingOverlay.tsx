@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { asset } from "@/lib/asset";
 
 type Props = {
   duration?: number;
@@ -51,7 +52,7 @@ export default function LoadingOverlay({
             }}
           />
           <img
-            src="/assets/loading-char.gif"
+            src={asset("/assets/loading-char.gif")}
             alt=""
             aria-hidden
             className="relative w-28 h-28 object-contain"

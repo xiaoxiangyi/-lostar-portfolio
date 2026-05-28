@@ -7,6 +7,7 @@ import HUDFooter from "@/components/HUDFooter";
 import LoadingOverlay from "@/components/LoadingOverlay";
 import BlackHoleTransition from "@/components/BlackHoleTransition";
 import Starmap from "@/components/Starmap";
+import { asset } from "@/lib/asset";
 
 // 在 client 用 layoutEffect（paint 前同步執行避免 FOUC）、server 退回 useEffect
 const useIsoLayoutEffect =
@@ -307,7 +308,7 @@ export default function TitleScreen() {
           style={{ boxShadow: "0 0 14px rgba(30,144,255,0.35)" }}
         >
           <img
-            src="/assets/logo.png"
+            src={asset("/assets/logo.png")}
             alt="LOSTAR 標誌"
             className="w-full h-full object-cover"
           />
@@ -341,7 +342,7 @@ export default function TitleScreen() {
           className="fixed top-4 right-4 z-40 group flex items-center gap-2 px-3 py-2 rounded-sm border border-[rgba(30,144,255,0.35)] bg-[rgba(10,14,39,0.65)] backdrop-blur text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:border-[var(--color-accent)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] transition-all select-none"
         >
           <img
-            src="/assets/icon-skip.png"
+            src={asset("/assets/icon-skip.png")}
             alt=""
             aria-hidden="true"
             className="w-5 h-5 opacity-80 group-hover:opacity-100 transition-transform group-hover:translate-x-0.5"
@@ -367,7 +368,7 @@ export default function TitleScreen() {
             <div style={{ animation: "title-glitch 9s linear infinite" }}>
               <img
                 ref={loRef}
-                src="/assets/title-lo-trim.png"
+                src={asset("/assets/title-lo-trim.png")}
                 alt=""
                 aria-hidden="true"
                 className="block w-auto h-[clamp(50px,8vh,75px)] md:h-[clamp(80px,14vh,180px)]"
@@ -380,7 +381,7 @@ export default function TitleScreen() {
             <div style={{ animation: "title-glitch 11s linear infinite 1.5s" }}>
               <img
                 ref={starRef}
-                src="/assets/title-star-trim.png"
+                src={asset("/assets/title-star-trim.png")}
                 alt=""
                 aria-hidden="true"
                 className="block w-auto h-[clamp(50px,8vh,75px)] md:h-[clamp(80px,14vh,180px)]"
@@ -414,7 +415,7 @@ export default function TitleScreen() {
             {/* 人物：fit 容器，腿/腳因 bottom 負值被 viewport 自然截掉 */}
             <img
               ref={characterRef}
-              src="/assets/character.png"
+              src={asset("/assets/character.png")}
               alt=""
               aria-hidden="true"
               className="block w-full h-full object-contain object-bottom"

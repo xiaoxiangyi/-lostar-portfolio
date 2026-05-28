@@ -1,6 +1,7 @@
 "use client";
 
 import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
+import { asset } from "@/lib/asset";
 
 type Star = {
   top: string;
@@ -88,7 +89,7 @@ const StarryBackground = forwardRef<HTMLDivElement>(function StarryBackground(
       <div
         className="absolute inset-0 bg-cover bg-center opacity-95"
         style={{
-          backgroundImage: "url(/assets/bg-nebula.png)",
+          backgroundImage: `url(${asset("/assets/bg-nebula.png")})`,
           filter: "brightness(1.05) saturate(1.25) contrast(1.05)",
           WebkitMaskImage:
             "radial-gradient(ellipse 90% 80% at 50% 45%, black 35%, rgba(0,0,0,0.7) 70%, transparent 100%)",
